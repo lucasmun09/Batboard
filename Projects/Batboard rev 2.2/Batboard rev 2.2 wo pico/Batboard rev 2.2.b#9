@@ -1473,12 +1473,12 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1100322" x="18.415" y="0.635" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="71.755" y="51.435" size="0.6096" layer="27" font="vector"/>
 </element>
-<element name="R25" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M1206" value="0" x="2.2225" y="44.45" smashed="yes" rot="R270">
-<attribute name="MF" value="PANASONIC ELECTRONIC COMPONENTS" x="-86.6775" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="ERJ8ENF32R4V" x="-86.6775" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="3.4925" y="45.72" size="0.6096" layer="25" font="vector" rot="R270"/>
-<attribute name="OC_FARNELL" value="2307627" x="-86.6775" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-0.3175" y="45.72" size="0.6096" layer="27" font="vector" rot="R270"/>
+<element name="R25" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="M1206" value="0" x="2.54" y="46.99" smashed="yes" rot="R270">
+<attribute name="MF" value="PANASONIC ELECTRONIC COMPONENTS" x="-86.36" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="ERJ8ENF32R4V" x="-86.36" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="3.81" y="48.26" size="0.6096" layer="25" font="vector" rot="R270"/>
+<attribute name="OC_FARNELL" value="2307627" x="-86.36" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="0" y="48.26" size="0.6096" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="U$1" library="ultravolt_daughterboard" package="HV-DC_BOARD_SOCKET" value="HV_DC_BOARD_SOCKET" x="30.1625" y="31.4325" smashed="yes">
 <attribute name="NAME" x="45.6565" y="18.6055" size="0.6096" layer="25" font="vector" ratio="10" rot="R180"/>
@@ -1818,10 +1818,13 @@ design rules under a new name.</description>
 <vertex x="101.9175" y="68.8975"/>
 <vertex x="-0.47625" y="68.8975"/>
 </polygon>
+<contactref element="U$5" pad="5"/>
+<via x="23.97125" y="2.69875" extent="1-16" drill="0.35" diameter="0.508"/>
+<via x="97.155" y="40.48125" extent="1-16" drill="0.35" diameter="0.508"/>
+<via x="70.8025" y="8.5725" extent="1-16" drill="0.2286"/>
 <wire x1="68.8975" y1="4.8925" x2="66.51625" y2="2.0925" width="0" layer="19" extent="1-1"/>
-<wire x1="69.46875" y1="8.5725" x2="69.46875" y2="11.1125" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="48.39" x2="2.54" y2="45.59" width="0" layer="19" extent="1-1"/>
 <wire x1="61.595" y1="10.925" x2="69.46875" y2="11.1125" width="0" layer="19" extent="1-1"/>
-<wire x1="96.2025" y1="52.41625" x2="99.38975" y2="44.1325" width="0" layer="19" extent="1-1"/>
 <wire x1="38.865" y1="2.8575" x2="25.905" y2="2.8575" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
@@ -2076,7 +2079,7 @@ design rules under a new name.</description>
 <signal name="N$26">
 <contactref element="C7" pad="1"/>
 <contactref element="R23" pad="1"/>
-<wire x1="34.925" y1="61.09" x2="38.1" y2="61.09" width="0" layer="19" extent="1-1"/>
+<wire x1="34.925" y1="61.09" x2="38.1" y2="61.09" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="17"/>
@@ -2658,7 +2661,6 @@ design rules under a new name.</description>
 <wire x1="71.59625" y1="8.09625" x2="71.59625" y2="9.04875" width="0.508" layer="1"/>
 <wire x1="71.59625" y1="9.04875" x2="70.8025" y2="9.8425" width="0.508" layer="1"/>
 <wire x1="70.8025" y1="9.8425" x2="69.46875" y2="9.8425" width="0.508" layer="1"/>
-<wire x1="66.51625" y1="4.8925" x2="66.675" y2="5.05125" width="0.762" layer="1"/>
 <wire x1="66.675" y1="5.05125" x2="66.675" y2="6.0325" width="0.635" layer="1"/>
 <wire x1="66.675" y1="6.0325" x2="66.9925" y2="6.35" width="0.635" layer="1"/>
 <wire x1="66.9925" y1="6.35" x2="68.8975" y2="6.35" width="0.635" layer="1"/>
@@ -2668,15 +2670,23 @@ design rules under a new name.</description>
 <wire x1="95.885" y1="19.3675" x2="90.32875" y2="12.85875" width="2.032" layer="16"/>
 <wire x1="90.32875" y1="12.85875" x2="90.32875" y2="2.38125" width="2.032" layer="16"/>
 <wire x1="90.32875" y1="2.38125" x2="89.9795" y2="2.032" width="2.032" layer="16"/>
-<wire x1="69.37675" y1="2.032" x2="66.51625" y2="4.8925" width="2.032" layer="16"/>
-<via x="66.51625" y="4.8925" extent="1-16" drill="0.35" diameter="1.27"/>
-<wire x1="89.9795" y1="2.032" x2="69.37675" y2="2.032" width="2.032" layer="16"/>
-<wire x1="66.51625" y1="4.8925" x2="36.325" y2="4.8925" width="2.032" layer="16"/>
+<wire x1="69.5355" y1="2.032" x2="66.675" y2="4.8925" width="2.032" layer="16"/>
+<wire x1="89.9795" y1="2.032" x2="69.5355" y2="2.032" width="2.032" layer="16"/>
+<wire x1="66.675" y1="4.8925" x2="36.325" y2="4.8925" width="2.032" layer="16"/>
 <wire x1="36.325" y1="4.8925" x2="34.13125" y2="2.69875" width="2.032" layer="16"/>
 <wire x1="34.13125" y1="2.69875" x2="28.8925" y2="2.69875" width="2.032" layer="16"/>
 <wire x1="26.64125" y1="4.95" x2="26.64125" y2="8.41375" width="2.032" layer="16"/>
 <via x="26.64125" y="8.41375" extent="1-16" drill="0.35" diameter="1.27"/>
 <wire x1="28.8925" y1="2.69875" x2="26.64125" y2="4.95" width="2.032" layer="16"/>
+<via x="71.6661" y="8.5725" extent="1-16" drill="0.381"/>
+<wire x1="66.675" y1="4.8925" x2="71.882" y2="4.8925" width="1.016" layer="16"/>
+<wire x1="71.882" y1="4.8925" x2="71.882" y2="8.5725" width="1.016" layer="16"/>
+<wire x1="71.59625" y1="9.04875" x2="71.59625" y2="8.5725" width="0.508" layer="1"/>
+<wire x1="71.59625" y1="8.5725" x2="71.6661" y2="8.5725" width="0.508" layer="1"/>
+<wire x1="66.675" y1="6.0325" x2="66.675" y2="4.43865" width="0.635" layer="1"/>
+<wire x1="66.675" y1="4.43865" x2="66.51625" y2="4.2799" width="0.635" layer="1"/>
+<wire x1="66.51625" y1="4.2799" x2="66.675" y2="4.8925" width="0" layer="19" extent="1-1"/>
+<wire x1="71.882" y1="8.5725" x2="71.6661" y2="8.5725" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$61">
 <contactref element="TPS1" pad="5"/>
@@ -2705,9 +2715,6 @@ design rules under a new name.</description>
 <contactref element="R7" pad="1"/>
 <contactref element="C6" pad="2"/>
 <wire x1="36.35375" y1="5.9025" x2="39.21125" y2="5.9025" width="0.381" layer="1"/>
-</signal>
-<signal name="N$31">
-<contactref element="U$5" pad="5"/>
 </signal>
 <signal name="N$46">
 <contactref element="U$5" pad="4"/>
