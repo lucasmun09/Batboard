@@ -6998,7 +6998,11 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <attribute name="OC_FARNELL" value="1414661"/>
 </part>
 <part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<<<<<<< HEAD
 <part name="+12V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device="" value="+12V"/>
+=======
+<part name="P-3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device="" value="+12V"/>
+>>>>>>> 239a1b4d72814a0c57303e86f2737d3129c9627a
 <part name="U$7" library="SOIC127P602X168-8N" deviceset="LM23630" device=""/>
 <part name="C16" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value=".47uF">
 <attribute name="MF" value="KEMET"/>
