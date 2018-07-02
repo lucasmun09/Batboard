@@ -3993,6 +3993,39 @@ by exp-lbrs.ulp</description>
 <pad name="1" x="-19.05" y="6.5532" drill="2.1844" diameter="3.81"/>
 <pad name="2" x="19.05" y="6.5532" drill="2.1844" diameter="3.81"/>
 </package>
+<package name="XT60">
+<pad name="POS" x="-3.81" y="0" drill="4.445" diameter="6.35"/>
+<pad name="NEG" x="3.3900125" y="0" drill="4.445" diameter="6.35"/>
+<wire x1="10.16" y1="1.27" x2="10.16" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="-2.54" x2="6.35" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="1.27" x2="10.16" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="5.08" x2="6.35" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="5.08" x2="10.16" y2="2.54" width="0.1524" layer="21"/>
+</package>
+<package name="SOT23-6">
+<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
+<wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
+<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
+<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
+<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
+<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
+<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HV-DC_BOARD_SCOKET">
@@ -4036,6 +4069,89 @@ by exp-lbrs.ulp</description>
 <text x="17.78" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-22.86" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="XT60">
+<wire x1="-10.16" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="10.16" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.1524" layer="94"/>
+<circle x="-5.08" y="0" radius="2.54" width="0.1524" layer="94"/>
+<circle x="5.08" y="0" radius="2.54" width="0.1524" layer="94"/>
+<pin name="1" x="-12.7" y="0" length="middle"/>
+<pin name="2" x="12.7" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="DUAL_MOSFET_ARRAY">
+<wire x1="-4.572" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-2.159" x2="-5.08" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-6.477" y1="-0.254" x2="-6.477" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="-6.477" y1="-3.048" x2="-5.08" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="2.159" x2="-5.08" y2="2.159" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="3.048" x2="-6.477" y2="3.048" width="0.1524" layer="94"/>
+<wire x1="-6.477" y1="3.048" x2="-6.477" y2="0.762" width="0.1524" layer="94"/>
+<text x="-5.08" y="-10.16" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
+<text x="-5.08" y="10.16" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
+<rectangle x1="-3.556" y1="1.397" x2="-3.048" y2="2.921" layer="94" rot="R180"/>
+<rectangle x1="-3.556" y1="-0.762" x2="-3.048" y2="0.762" layer="94" rot="R180"/>
+<rectangle x1="-3.556" y1="-2.921" x2="-3.048" y2="-1.397" layer="94" rot="R180"/>
+<rectangle x1="-7.112" y1="0.762" x2="-5.842" y2="0.889" layer="94"/>
+<pin name="D" x="-5.08" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="-5.08" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1016" layer="94">
+<vertex x="-3.556" y="0"/>
+<vertex x="-4.572" y="0.635"/>
+<vertex x="-4.572" y="-0.635"/>
+</polygon>
+<polygon width="0.1016" layer="94">
+<vertex x="-6.477" y="0.762"/>
+<vertex x="-7.112" y="-0.254"/>
+<vertex x="-5.842" y="-0.254"/>
+</polygon>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="6.604" y1="-2.159" x2="5.08" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="3.683" y1="-0.254" x2="3.683" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="3.683" y1="-3.048" x2="5.08" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="6.604" y1="2.159" x2="5.08" y2="2.159" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="3.048" x2="3.683" y2="3.048" width="0.1524" layer="94"/>
+<wire x1="3.683" y1="3.048" x2="3.683" y2="0.762" width="0.1524" layer="94"/>
+<rectangle x1="6.604" y1="1.397" x2="7.112" y2="2.921" layer="94" rot="R180"/>
+<rectangle x1="6.604" y1="-0.762" x2="7.112" y2="0.762" layer="94" rot="R180"/>
+<rectangle x1="6.604" y1="-2.921" x2="7.112" y2="-1.397" layer="94" rot="R180"/>
+<rectangle x1="3.048" y1="0.762" x2="4.318" y2="0.889" layer="94"/>
+<pin name="D1" x="5.08" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S1" x="5.08" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G1" x="10.16" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1016" layer="94">
+<vertex x="6.604" y="0"/>
+<vertex x="5.588" y="0.635"/>
+<vertex x="5.588" y="-0.635"/>
+</polygon>
+<polygon width="0.1016" layer="94">
+<vertex x="3.683" y="0.762"/>
+<vertex x="3.048" y="-0.254"/>
+<vertex x="4.318" y="-0.254"/>
+</polygon>
+<wire x1="10.16" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.159" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.159" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.159" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="12.7" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="HV_DC_BOARD_SOCKET">
@@ -4066,6 +4182,42 @@ by exp-lbrs.ulp</description>
 </gates>
 <devices>
 <device name="" package="HS_27_HEATSINK">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XT60">
+<gates>
+<gate name="G$1" symbol="XT60" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XT60">
+<connects>
+<connect gate="G$1" pin="1" pad="POS"/>
+<connect gate="G$1" pin="2" pad="NEG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMN2004DMK_DUAL_N-CHANNEL_MOSFET_ARRAY">
+<gates>
+<gate name="G$1" symbol="DUAL_MOSFET_ARRAY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="D" pad="6"/>
+<connect gate="G$1" pin="D1" pad="3"/>
+<connect gate="G$1" pin="G" pad="5"/>
+<connect gate="G$1" pin="G1" pad="2"/>
+<connect gate="G$1" pin="S" pad="4"/>
+<connect gate="G$1" pin="S1" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6958,13 +7110,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <attribute name="OC_FARNELL" value="1414661"/>
 </part>
 <part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="P-3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device="" value="+12V"/>
-<part name="R8" library="resistor-bourns" library_urn="urn:adsk.eagle:library:341" deviceset="4816P-T01" device="" package3d_urn="urn:adsk.eagle:package:24859/1"/>
-<part name="GND16" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="R10" library="resistor-bourns" library_urn="urn:adsk.eagle:library:341" deviceset="4816P-T01" device="" package3d_urn="urn:adsk.eagle:package:24859/1"/>
-<part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="+12V" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device="" value="+12V"/>
 <part name="U$7" library="SOIC127P602X168-8N" deviceset="LM23630" device=""/>
 <part name="C16" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value=".47uF">
 <attribute name="MF" value="KEMET"/>
@@ -7008,6 +7154,14 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <attribute name="MPN" value="C0805C103K1RACTU"/>
 <attribute name="OC_FARNELL" value="1414661"/>
 </part>
+<part name="U$6" library="ultravolt_daughterboard" deviceset="XT60" device=""/>
+<part name="R8" library="resistor-bourns" library_urn="urn:adsk.eagle:library:341" deviceset="4816P-T01" device="" package3d_urn="urn:adsk.eagle:package:24859/1" value="10K"/>
+<part name="GND16" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="R10" library="resistor-bourns" library_urn="urn:adsk.eagle:library:341" deviceset="4816P-T01" device="" package3d_urn="urn:adsk.eagle:package:24859/1" value="10K"/>
+<part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="U$8" library="ultravolt_daughterboard" deviceset="DMN2004DMK_DUAL_N-CHANNEL_MOSFET_ARRAY" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7051,6 +7205,8 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <instance part="GND3" gate="1" x="-46.99" y="-39.37" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-49.53" y="-39.37" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="U$6" gate="G$1" x="-31.75" y="-60.96"/>
+<instance part="U$8" gate="G$1" x="21.59" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -7082,6 +7238,11 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pinref part="U$1" gate="G$1" pin="ENABLE"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-44.45" y1="-39.37" x2="-41.91" y2="-39.37" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="2"/>
+<wire x1="-19.05" y1="-60.96" x2="-13.97" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-12.7" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -7124,6 +7285,13 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-8.89" y1="-39.37" x2="-11.43" y2="-39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="BATT" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="1"/>
+<wire x1="-44.45" y1="-60.96" x2="-53.34" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-60.96" y="-60.96" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -7158,21 +7326,13 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <instance part="GND12" gate="1" x="-21.59" y="1.27" smashed="yes">
 <attribute name="VALUE" x="-21.59" y="-0.254" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="P-3" gate="1" x="-34.29" y="12.7" smashed="yes" rot="R270">
+<instance part="+12V" gate="1" x="-34.29" y="12.7" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-36.83" y="12.7" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$31" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="GND"/>
-<wire x1="-15.24" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-15.24" x2="-17.78" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="-"/>
@@ -7183,6 +7343,12 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-21.59" y1="3.81" x2="-21.59" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<wire x1="-15.24" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-15.24" x2="-17.78" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -7212,7 +7378,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <net name="+12V" class="0">
 <segment>
 <wire x1="-21.59" y1="12.7" x2="-31.75" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="P-3" gate="1" pin="-12V"/>
+<pinref part="+12V" gate="1" pin="-12V"/>
 <pinref part="U$5" gate="G$1" pin="VCC"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-21.59" y1="12.7" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
@@ -8202,25 +8368,25 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <instance part="P+5" gate="1" x="35.56" y="-22.86" smashed="yes" rot="R90">
 <attribute name="VALUE" x="33.02" y="-22.225" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R8" gate="A" x="-29.21" y="-38.1" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-38.608" y="-34.29" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="-15.494" y="-33.528" size="1.778" layer="96" rot="MR270"/>
+<instance part="R8" gate="A" x="-26.67" y="-36.83" smashed="yes" rot="R270">
+<attribute name="NAME" x="-17.272" y="-33.02" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-25.908" y="-43.434" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND16" gate="1" x="-19.05" y="-45.72" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-19.05" y="-45.974" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<instance part="GND16" gate="1" x="-36.83" y="-44.45" smashed="yes">
+<attribute name="VALUE" x="-36.83" y="-44.704" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND17" gate="1" x="-36.83" y="-45.72" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-36.83" y="-45.974" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<instance part="GND17" gate="1" x="-19.05" y="-44.45" smashed="yes">
+<attribute name="VALUE" x="-19.05" y="-44.704" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="R10" gate="A" x="-29.21" y="41.91" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-19.812" y="38.1" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="-42.926" y="37.338" size="1.778" layer="96" rot="MR90"/>
+<instance part="R10" gate="A" x="-31.75" y="41.91" smashed="yes" rot="R90">
+<attribute name="NAME" x="-41.148" y="38.1" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-18.034" y="41.148" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND4" gate="1" x="-19.05" y="49.53" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-19.05" y="49.784" size="1.778" layer="96" rot="R180" align="top-center"/>
+<instance part="GND4" gate="1" x="-41.91" y="49.53" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="-41.91" y="49.784" size="1.778" layer="96" rot="MR180" align="top-center"/>
 </instance>
-<instance part="GND5" gate="1" x="-36.83" y="49.53" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-36.83" y="49.784" size="1.778" layer="96" rot="R180" align="top-center"/>
+<instance part="GND5" gate="1" x="-24.13" y="49.53" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="-24.13" y="49.784" size="1.778" layer="96" rot="MR180" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -8292,25 +8458,25 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pinref part="JP4" gate="A" pin="27"/>
 </segment>
 <segment>
-<junction x="-21.59" y="-43.18"/>
-<junction x="-24.13" y="-43.18"/>
-<junction x="-26.67" y="-43.18"/>
-<junction x="-29.21" y="-43.18"/>
-<junction x="-31.75" y="-43.18"/>
-<junction x="-34.29" y="-43.18"/>
+<junction x="-34.29" y="-41.91"/>
+<junction x="-31.75" y="-41.91"/>
+<junction x="-29.21" y="-41.91"/>
+<junction x="-26.67" y="-41.91"/>
+<junction x="-24.13" y="-41.91"/>
+<junction x="-21.59" y="-41.91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<junction x="-19.05" y="-43.18"/>
-<wire x1="-26.67" y1="-43.18" x2="-24.13" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="-36.83" y="-41.91"/>
+<wire x1="-29.21" y1="-41.91" x2="-31.75" y2="-41.91" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<junction x="-36.83" y="-43.18"/>
-<wire x1="-26.67" y1="-43.18" x2="-29.21" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-29.21" y1="-43.18" x2="-31.75" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-31.75" y1="-43.18" x2="-34.29" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-34.29" y1="-43.18" x2="-36.83" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-24.13" y1="-43.18" x2="-21.59" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="-19.05" y="-41.91"/>
+<wire x1="-29.21" y1="-41.91" x2="-26.67" y2="-41.91" width="0.1524" layer="91"/>
+<wire x1="-26.67" y1="-41.91" x2="-24.13" y2="-41.91" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="-41.91" x2="-21.59" y2="-41.91" width="0.1524" layer="91"/>
+<wire x1="-21.59" y1="-41.91" x2="-19.05" y2="-41.91" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="-41.91" x2="-34.29" y2="-41.91" width="0.1524" layer="91"/>
 <pinref part="R8" gate="A" pin="9"/>
 <pinref part="R8" gate="A" pin="10"/>
-<wire x1="-21.59" y1="-43.18" x2="-19.05" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-34.29" y1="-41.91" x2="-36.83" y2="-41.91" width="0.1524" layer="91"/>
 <pinref part="R8" gate="A" pin="11"/>
 <pinref part="R8" gate="A" pin="12"/>
 <pinref part="R8" gate="A" pin="13"/>
@@ -8319,33 +8485,33 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pinref part="R8" gate="A" pin="16"/>
 </segment>
 <segment>
-<junction x="-36.83" y="46.99"/>
-<junction x="-34.29" y="46.99"/>
-<junction x="-31.75" y="46.99"/>
-<junction x="-29.21" y="46.99"/>
-<junction x="-26.67" y="46.99"/>
 <junction x="-24.13" y="46.99"/>
+<junction x="-26.67" y="46.99"/>
+<junction x="-29.21" y="46.99"/>
+<junction x="-31.75" y="46.99"/>
+<junction x="-34.29" y="46.99"/>
+<junction x="-36.83" y="46.99"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<junction x="-39.37" y="46.99"/>
-<wire x1="-31.75" y1="46.99" x2="-34.29" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="1" pin="GND"/>
 <junction x="-21.59" y="46.99"/>
-<wire x1="-31.75" y1="46.99" x2="-29.21" y2="46.99" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="46.99" x2="-26.67" y2="46.99" width="0.1524" layer="91"/>
-<wire x1="-26.67" y1="46.99" x2="-24.13" y2="46.99" width="0.1524" layer="91"/>
-<wire x1="-24.13" y1="46.99" x2="-21.59" y2="46.99" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<junction x="-39.37" y="46.99"/>
+<wire x1="-29.21" y1="46.99" x2="-31.75" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="46.99" x2="-34.29" y2="46.99" width="0.1524" layer="91"/>
 <wire x1="-34.29" y1="46.99" x2="-36.83" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="-36.83" y1="46.99" x2="-39.37" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="-26.67" y1="46.99" x2="-24.13" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="R10" gate="A" pin="9"/>
 <pinref part="R10" gate="A" pin="10"/>
-<wire x1="-36.83" y1="46.99" x2="-39.37" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="46.99" x2="-21.59" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="R10" gate="A" pin="11"/>
 <pinref part="R10" gate="A" pin="12"/>
 <pinref part="R10" gate="A" pin="13"/>
 <pinref part="R10" gate="A" pin="14"/>
 <pinref part="R10" gate="A" pin="15"/>
 <pinref part="R10" gate="A" pin="16"/>
-<wire x1="-21.59" y1="46.99" x2="-36.83" y2="46.99" width="0.1524" layer="91"/>
-<wire x1="-39.37" y1="46.99" x2="-19.05" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="-39.37" y1="46.99" x2="-24.13" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="-21.59" y1="46.99" x2="-41.91" y2="46.99" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -8355,7 +8521,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pinref part="U$2" gate="G$1" pin="IN.8"/>
 <wire x1="-39.37" y1="36.83" x2="-39.37" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-39.37" y="5.08"/>
-<pinref part="R10" gate="A" pin="8"/>
+<pinref part="R10" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -8366,7 +8532,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-36.83" y1="7.62" x2="-15.24" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-36.83" y1="36.83" x2="-36.83" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-36.83" y="7.62"/>
-<pinref part="R10" gate="A" pin="7"/>
+<pinref part="R10" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -8377,7 +8543,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-26.67" y1="17.78" x2="-39.37" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="36.83" x2="-26.67" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-26.67" y="17.78"/>
-<pinref part="R10" gate="A" pin="3"/>
+<pinref part="R10" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -8388,7 +8554,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-34.29" y1="10.16" x2="-15.24" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-34.29" y1="36.83" x2="-34.29" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-34.29" y="10.16"/>
-<pinref part="R10" gate="A" pin="6"/>
+<pinref part="R10" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -8399,7 +8565,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-31.75" y1="12.7" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="36.83" x2="-31.75" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-31.75" y="12.7"/>
-<pinref part="R10" gate="A" pin="5"/>
+<pinref part="R10" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -8410,7 +8576,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-29.21" y1="15.24" x2="-15.24" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="36.83" x2="-29.21" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-29.21" y="15.24"/>
-<pinref part="R10" gate="A" pin="4"/>
+<pinref part="R10" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -8441,9 +8607,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-15.24" y1="-7.62" x2="-36.83" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="IN.1"/>
 <wire x1="-36.83" y1="-7.62" x2="-39.37" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-36.83" y1="-33.02" x2="-36.83" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-36.83" y1="-31.75" x2="-36.83" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-36.83" y="-7.62"/>
-<pinref part="R8" gate="A" pin="1"/>
+<pinref part="R8" gate="A" pin="8"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -8452,9 +8618,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pinref part="U$3" gate="G$1" pin="IN.8"/>
 <wire x1="-15.24" y1="-25.4" x2="-19.05" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-19.05" y1="-25.4" x2="-39.37" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-19.05" y1="-33.02" x2="-19.05" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-19.05" y1="-31.75" x2="-19.05" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="-19.05" y="-25.4"/>
-<pinref part="R8" gate="A" pin="8"/>
+<pinref part="R8" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -8463,9 +8629,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-39.37" y1="-22.86" x2="-21.59" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="IN.7"/>
 <wire x1="-21.59" y1="-22.86" x2="-15.24" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-21.59" y1="-33.02" x2="-21.59" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-21.59" y1="-31.75" x2="-21.59" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="-21.59" y="-22.86"/>
-<pinref part="R8" gate="A" pin="7"/>
+<pinref part="R8" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -8474,9 +8640,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-15.24" y1="-10.16" x2="-34.29" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="IN.2"/>
 <wire x1="-34.29" y1="-10.16" x2="-39.37" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-34.29" y1="-33.02" x2="-34.29" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-34.29" y1="-31.75" x2="-34.29" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-34.29" y="-10.16"/>
-<pinref part="R8" gate="A" pin="2"/>
+<pinref part="R8" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="N$42" class="0">
@@ -8485,9 +8651,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-15.24" y1="-12.7" x2="-31.75" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="IN.3"/>
 <wire x1="-31.75" y1="-12.7" x2="-39.37" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-31.75" y1="-33.02" x2="-31.75" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="-31.75" x2="-31.75" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-31.75" y="-12.7"/>
-<pinref part="R8" gate="A" pin="3"/>
+<pinref part="R8" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -8496,9 +8662,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-39.37" y1="-20.32" x2="-24.13" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="IN.6"/>
 <wire x1="-24.13" y1="-20.32" x2="-15.24" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-24.13" y1="-33.02" x2="-24.13" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="-31.75" x2="-24.13" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="-24.13" y="-20.32"/>
-<pinref part="R8" gate="A" pin="6"/>
+<pinref part="R8" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -8507,9 +8673,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pinref part="U$3" gate="G$1" pin="IN.5"/>
 <wire x1="-39.37" y1="-17.78" x2="-26.67" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="-17.78" x2="-15.24" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-26.67" y1="-33.02" x2="-26.67" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-26.67" y1="-31.75" x2="-26.67" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="-26.67" y="-17.78"/>
-<pinref part="R8" gate="A" pin="5"/>
+<pinref part="R8" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -8518,9 +8684,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pinref part="U$3" gate="G$1" pin="IN.4"/>
 <wire x1="-39.37" y1="-15.24" x2="-29.21" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="-15.24" x2="-15.24" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-29.21" y1="-33.02" x2="-29.21" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-29.21" y1="-31.75" x2="-29.21" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-29.21" y="-15.24"/>
-<pinref part="R8" gate="A" pin="4"/>
+<pinref part="R8" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8531,7 +8697,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-21.59" y1="22.86" x2="-39.37" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-21.59" y1="36.83" x2="-21.59" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-21.59" y="22.86"/>
-<pinref part="R10" gate="A" pin="1"/>
+<pinref part="R10" gate="A" pin="8"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8542,7 +8708,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-24.13" y1="20.32" x2="-39.37" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-24.13" y1="36.83" x2="-24.13" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-24.13" y="20.32"/>
-<pinref part="R10" gate="A" pin="2"/>
+<pinref part="R10" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -8677,6 +8843,10 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,5,-55.88,0,U2,2IN-,,,,"/>
+<approved hash="202,5,-55.88,-2.54,U2,2IN+,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
