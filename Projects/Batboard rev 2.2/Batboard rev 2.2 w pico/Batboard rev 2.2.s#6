@@ -4822,6 +4822,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 </part>
 <part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="P-3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device="" value="12V"/>
+<part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5730,6 +5731,9 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <instance part="JP4" gate="A" x="45.72" y="7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.07" y="-10.795" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="52.07" y="30.48" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND14" gate="1" x="50.8" y="10.16" smashed="yes" rot="R90">
+<attribute name="VALUE" x="51.054" y="10.16" size="1.778" layer="96" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
