@@ -1666,17 +1666,16 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="4"/>
 <wire x1="63.5" y1="19.05" x2="63.5" y2="16.51" width="1.27" layer="1"/>
 <wire x1="63.5" y1="16.51" x2="63.5" y2="13.97" width="1.27" layer="1"/>
-<polygon width="0.0254" layer="16">
+<polygon width="0.1524" layer="16">
+<vertex x="-0.635" y="-1.27"/>
+<vertex x="66.675" y="-1.27"/>
+<vertex x="66.675" y="31.75"/>
 <vertex x="-0.635" y="31.75"/>
-<vertex x="-0.635" y="0"/>
-<vertex x="65.405" y="0"/>
-<vertex x="65.405" y="31.75"/>
 </polygon>
-<polygon width="0.0254" layer="1">
-<vertex x="0" y="30.48"/>
-<vertex x="0" y="-0.635"/>
-<vertex x="66.04" y="-0.635"/>
+<polygon width="0.1524" layer="1">
 <vertex x="66.04" y="31.115"/>
+<vertex x="66.04" y="-0.635"/>
+<vertex x="0" y="-0.635"/>
 <vertex x="0" y="31.115"/>
 </polygon>
 </signal>
