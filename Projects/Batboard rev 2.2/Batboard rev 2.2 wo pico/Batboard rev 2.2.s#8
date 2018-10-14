@@ -6641,14 +6641,6 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="-6.35" y1="2.65" x2="-3.4" y2="2.65" width="0.15" layer="25"/>
 <wire x1="-3.4" y1="2.65" x2="-3.4" y2="2.35" width="0.15" layer="25"/>
 </package>
-<package name="10.1*10.1">
-<wire x1="-5.08" y1="-5.08" x2="5.02" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="5.02" y1="-5.08" x2="5.02" y2="5.02" width="0.127" layer="21"/>
-<wire x1="5.02" y1="5.02" x2="-5.08" y2="5.02" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.02" width="0.127" layer="21"/>
-<smd name="P$1" x="-3.81" y="0" dx="3.2" dy="2.5" layer="1" rot="R90"/>
-<smd name="P$2" x="3.81" y="0" dx="3.2" dy="2.5" layer="1" rot="R90"/>
-</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -6670,22 +6662,6 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 </gates>
 <devices>
 <device name="" package="12.5*12.5">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SLF10165">
-<gates>
-<gate name="G$1" symbol="INDUCTOR" x="2.54" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="10.1*10.1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -11581,7 +11557,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <attribute name="OC_FARNELL" value="1414661"/>
 </part>
 <part name="GND23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SLF1" library="Inductors" deviceset="SLF10165" device="" value="10uH"/>
 <part name="C18" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="47pF">
 <attribute name="MF" value="KEMET"/>
 <attribute name="MPN" value="C0805C103K1RACTU"/>
@@ -11636,6 +11611,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P-3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
+<part name="SRR1260-100M2" library="Inductors" deviceset="SRR1260-100M" device="" value="10uH"/>
 </parts>
 <sheets>
 <sheet>
@@ -12222,10 +12198,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND23" gate="1" x="-22.86" y="-2.54" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-23.114" y="-2.54" size="1.778" layer="96" rot="R270" align="top-center"/>
 </instance>
-<instance part="SLF1" gate="G$1" x="2.54" y="13.97" smashed="yes">
-<attribute name="VALUE" x="-2.54" y="16.51" size="1.778" layer="96"/>
-<attribute name="NAME" x="3.81" y="16.51" size="1.778" layer="95"/>
-</instance>
 <instance part="C18" gate="G$1" x="17.78" y="16.51" smashed="yes">
 <attribute name="OC_FARNELL" x="17.78" y="16.51" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="MF" x="17.78" y="16.51" size="1.778" layer="96" rot="R270" display="off"/>
@@ -12269,6 +12241,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <attribute name="VALUE" x="43.434" y="26.67" size="1.778" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="C15" gate="G$1" x="38.1" y="19.05" rot="R180"/>
+<instance part="SRR1260-100M2" gate="G$1" x="2.54" y="13.97"/>
 </instances>
 <busses>
 </busses>
@@ -12306,7 +12279,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="SLF1" gate="G$1" pin="P$2"/>
 <wire x1="10.16" y1="13.97" x2="17.78" y2="13.97" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="13.97" x2="25.4" y2="13.97" width="0.1524" layer="91"/>
 <junction x="17.78" y="13.97"/>
@@ -12319,6 +12291,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="38.1" y1="16.51" x2="38.1" y2="13.97" width="0.1524" layer="91"/>
 <junction x="38.1" y="13.97"/>
 <pinref part="C15" gate="G$1" pin="+"/>
+<pinref part="SRR1260-100M2" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$52" class="0">
@@ -12335,10 +12308,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="U$7" gate="G$1" pin="SW"/>
 <wire x1="-22.86" y1="2.54" x2="-22.86" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="7.62" x2="-10.16" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="SLF1" gate="G$1" pin="P$1"/>
 <wire x1="-22.86" y1="7.62" x2="-22.86" y2="13.97" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="13.97" x2="-5.08" y2="13.97" width="0.1524" layer="91"/>
 <junction x="-22.86" y="7.62"/>
+<pinref part="SRR1260-100M2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$54" class="0">

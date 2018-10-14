@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11477,7 +11477,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="TPS1" library="SOIC127P600X175-8N" deviceset="TPS54560(8)" device=""/>
+<part name="TPS1" library="SOIC127P600X175-8N" deviceset="TPS54560(8)" device="" value="TPS54560"/>
 <part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-1206-50V-10%" package3d_urn="urn:adsk.eagle:package:37426/1" value="0.1uF">
 <attribute name="MF" value="KEMET"/>
 <attribute name="MPN" value="C0805C103K1RACTU"/>
@@ -11975,6 +11975,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </sheet>
 <sheet>
 <plain>
+<text x="-11.43" y="13.97" size="1.778" layer="91">TPS54560</text>
 </plain>
 <instances>
 <instance part="TPS1" gate="G$1" x="-10.16" y="31.75"/>
